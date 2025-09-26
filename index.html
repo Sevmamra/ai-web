@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>AI डायनामिक कंटेंट हब | Continuous Content Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="loading-overlay">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <p class="loading-text">सिस्टम प्रारंभ हो रहा है...</p>
+    </div>
+
+
+    <div id="main-wrapper">
+
+        <header id="main-header">
+            <div class="logo-container">
+                <span class="logo-text">डायनामिक हब</span>
+            </div>
+            <nav id="category-nav">
+                <button class="nav-button active" data-category="home" aria-label="होम सेक्शन पर जाएं">
+                    <span class="icon-placeholder"></span>
+                    <span>होम</span>
+                </button>
+                <button class="nav-button" data-category="kids" aria-label="किड्स ज़ोन पर जाएं">
+                    <span class="icon-placeholder"></span>
+                    <span>किड्स ज़ोन</span>
+                </button>
+                <button class="nav-button" data-category="food" aria-label="फूड रेसिपी पर जाएं">
+                    <span class="icon-placeholder"></span>
+                    <span>रेसिपीज़</span>
+                </button>
+                <button class="nav-button" data-category="ai" aria-label="AI इनसाइट्स पर जाएं">
+                    <span class="icon-placeholder"></span>
+                    <span>AI इनसाइट्स</span>
+                </button>
+                <button class="nav-button" data-category="art" aria-label="जेनरेटिव आर्ट पर जाएं">
+                    <span class="icon-placeholder"></span>
+                    <span>जेनरेटिव आर्ट</span>
+                </button>
+                <button class="nav-button" data-category="nature" aria-label="नेचर वीडियो पर जाएं">
+                    <span class="icon-placeholder"></span>
+                    <span>नेचर</span>
+                </button>
+                 <button class="nav-button" data-category="science" aria-label="साइंस फैक्ट्स पर जाएं">
+                    <span class="icon-placeholder"></span>
+                    <span>साइंस</span>
+                </button>
+                <button class="nav-button" data-category="music" aria-label="म्यूजिक विज़ुअलाइज़र पर जाएं">
+                    <span class="icon-placeholder"></span>
+                    <span>म्यूजिक</span>
+                </button>
+                <button id="toggle-fullscreen" aria-label="फुलस्क्रीन मोड टॉगल करें">
+                    <span class="icon-placeholder"></span>
+                </button>
+            </nav>
+        </header>
+
+
+        <main id="content-viewport">
+
+            <section id="home-content" class="content-section active">
+                
+                <div id="particle-canvas">
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle"></div> <div class="particle"></div> <div class="particle"></div> <div class="particle"></div>
+                    <div class="particle-group-1">
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                    </div>
+                    <div class="particle-group-2">
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                    </div>
+                    <div class="particle-group-3">
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                    </div>
+                    <div class="particle-group-4">
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                    </div>
+                    <div class="particle-group-5">
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+                    </div>
+                </div>
+
+                <div id="main-display-container">
+                    <video id="main-video-player" playsinline autoplay muted loop></video>
+                    <img id="main-image-displayer" src="" alt="Dynamic Image Content">
+                    <div id="css-art-displayer">
+                        </div>
+                </div>
+
+                <div id="ai-text-scroller">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">AI डेटा स्ट्रीम</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p>> सिस्टम एनालाइजिंग...</p>
+                        <p>> पैटर्न रिकग्निशन सक्रिय...</p>
+                        <p class="data-stream"></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="kids-content" class="content-section">
+                <div class="kids-grid">
+                    <div class="kid-card" data-content-id="kids-vid-1">
+                        <div class="card-media"></div>
+                        <div class="card-title">जादुई जंगल</div>
+                    </div>
+                    <div class="kid-card" data-content-id="kids-img-1">
+                        <div class="card-media"></div>
+                        <div class="card-title">रंगीन जानवर</div>
+                    </div>
+                    <div class="kid-card" data-content-id="kids-vid-2">
+                        <div class="card-media"></div>
+                        <div class="card-title">बोलने वाली कार</div>
+                    </div>
+                    <div class="kid-card" data-content-id="kids-game-1">
+                        <div class="card-media"></div>
+                        <div class="card-title">पहेली खेल</div>
+                    </div>
+                     <div class="kid-card" data-content-id="kids-vid-3">
+                        <div class="card-media"></div>
+                        <div class="card-title">अंतरिक्ष की सैर</div>
+                    </div>
+                    <div class="kid-card" data-content-id="kids-img-2">
+                        <div class="card-media"></div>
+                        <div class="card-title">सुपरहीरो</div>
+                    </div>
+                    <div class="kid-card" data-content-id="kids-vid-4">
+                        <div class="card-media"></div>
+                        <div class="card-title">चतुर लोमड़ी</div>
+                    </div>
+                    <div class="kid-card" data-content-id="kids-img-3">
+                        <div class="card-media"></div>
+                        <div class="card-title">डायनासोर</div>
+                    </div>
+                    <div class="kid-card" data-content-id="kids-vid-5">
+                        <div class="card-media"></div>
+                        <div class="card-title">पानी के नीचे</div>
+                    </div>
+                     <div class="kid-card" data-content-id="kids-game-2">
+                        <div class="card-media"></div>
+                        <div class="card-title">रंग भरो</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="food-content" class="content-section">
+                 <div class="recipe-carousel">
+                    <div class="recipe-slide">
+                        <div class="recipe-media-container">
+                             </div>
+                        <div class="recipe-details">
+                            <h2 class="recipe-title">रेसिपी का नाम</h2>
+                            <div class="ingredient-list">
+                                <h3>सामग्री:</h3>
+                                <ul>
+                                    <li>आइटम 1</li>
+                                    <li>आइटम 2</li>
+                                    <li>आइटम 3</li>
+                                    <li>आइटम 4</li>
+                                    <li>आइटम 5</li>
+                                </ul>
+                            </div>
+                            <div class="instructions">
+                                <h3>विधि:</h3>
+                                <p>पूरी विधि यहाँ आएगी...</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+            <section id="ai-content" class="content-section">
+                <div class="ai-dashboard">
+                    <div class="data-vis-panel">
+                        <h3>लाइव डेटा विज़ुअलाइज़ेशन</h3>
+                        <div class="bar-chart">
+                            <div class="bar" style="height: 60%;"></div>
+                            <div class="bar" style="height: 80%;"></div>
+                            <div class="bar" style="height: 40%;"></div>
+                            <div class="bar" style="height: 90%;"></div>
+                            <div class="bar" style="height: 75%;"></div>
+                            <div class="bar" style="height: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="concept-map-panel">
+                        <h3>AI कांसेप्ट नोड्स</h3>
+                        <svg class="concept-map-svg" viewBox="0 0 800 400">
+                            <circle class="node" id="node-ml" cx="100" cy="200" r="20"></circle>
+                            <circle class="node" id="node-dl" cx="300" cy="100" r="20"></circle>
+                            <circle class="node" id="node-nlp" cx="300" cy="300" r="20"></circle>
+                            <circle class="node" id="node-cv" cx="500" cy="100" r="20"></circle>
+                            <circle class="node" id="node-gan" cx="500" cy="300" r="20"></circle>
+                            <path class="link" d="M 120 200 L 280 110"></path>
+                            <path class="link" d="M 120 200 L 280 290"></path>
+                            <path class="link" d="M 320 105 L 480 105"></path>
+                            <path class="link" d="M 320 300 L 480 295"></path>
+                        </svg>
+                    </div>
+                    <div class="info-card-panel">
+                        <div class="info-card"><h4>मशीन लर्निंग</h4><p>...</p></div>
+                        <div class="info-card"><h4>डीप लर्निंग</h4><p>...</p></div>
+                        <div class="info-card"><h4>न्यूरल नेटवर्क</h4><p>...</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="art-content" class="content-section">
+                <div class="art-container">
+                    <div class="fractal-tree-canvas">
+                        </div>
+                    <div class="shape-morph-canvas">
+                         <svg id="morphing-svg" viewBox="0 0 100 100">
+                            <path id="shape1" d="M 50,5 L 95,95 L 5,95 Z" />
+                            <path id="shape2" d="M 50,50 m -45,0 a 45,45 0 1,0 90,0 a 45,45 0 1,0 -90,0" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="placeholder-div-block-1">
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+            </div>
+            <div class="placeholder-div-block-2">
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+            </div>
+             <div class="placeholder-div-block-3">
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+            </div>
+            <div class="placeholder-div-block-4">
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+                <div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div><div class="ph-item"></div>
+            </div>
+            </main>
+
+
+        <footer id="main-footer">
+            <div class="footer-content">
+                <div class="status-bar">
+                    <span id="system-status">सिस्टम स्थिति: सामान्य</span> | 
+                    <span id="current-category-display">वर्तमान श्रेणी: होम</span> |
+                    <span id="live-clock"></span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">हमारे बारे में</a>
+                    <a href="#">सेवा की शर्तें</a>
+                    <a href="#">गोपनीयता नीति</a>
+                </div>
+                <p class="copyright">&copy; 2025 डायनामिक कंटेंट हब. सभी अधिकार सुरक्षित।</p>
+            </div>
+        </footer>
+
+    </div> <script src="data.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
